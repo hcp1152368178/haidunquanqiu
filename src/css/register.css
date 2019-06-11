@@ -1,0 +1,568 @@
+#header {
+  height: 110px;
+  background: url(../img/register/headbg.jpg) left bottom repeat-x;
+}
+
+#header .logo {
+  float: left;
+}
+
+#header .logo h1 {
+  height: 50px;
+  width: 160px;
+  float: left;
+  margin-top: 24px;
+}
+
+#header .logo h1 a {
+  display: block;
+  text-indent: -9000px;
+  height: 50px;
+  width: 160px;
+  background: url(../img/register/reg-icon02.png) no-repeat;
+}
+
+#header .logo span {
+  display: block;
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+  color: #333;
+  margin-top: 34px;
+}
+
+#header .login {
+  font-size: 16px;
+  float: right;
+  margin-top: 55px;
+  color: #999;
+}
+
+#header .login a {
+  color: #e22;
+}
+
+#header .login a:hover {
+  text-decoration: underline;
+}
+
+#rank {
+  position: relative;
+  margin: 80px auto 0;
+  width: 400px;
+}
+
+#rank span,
+#rank .line {
+  background: url(../img/register/reg-icon.png);
+  text-align: center;
+}
+
+#rank .second {
+  margin-left: 106px;
+}
+
+#rank .third {
+  margin-left: 112px;
+}
+
+#rank .step-desc {
+  color: #3b4;
+}
+
+#rank .index {
+  background-position: 0 -200px;
+  color: #fff;
+}
+
+#rank .finish {
+  text-indent: -999px;
+  background-position: 0 0;
+  overflow: hidden;
+}
+
+#rank .line {
+  position: absolute;
+  top: 7px;
+  height: 10px;
+  width: 124px;
+  background-position: 0 -100px;
+}
+
+#rank .firline {
+  left: 55px;
+}
+
+#rank .secline {
+  left: 228px;
+}
+
+#rank .lineidx {
+  background-position: 0 -130px;
+}
+
+#rank span {
+  margin: 0 auto;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-position: -45px -200px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+#rank p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+#write {
+  width: 400px;
+  margin: 50px auto 186px;
+  font-size: 14px;
+  position: relative;
+}
+
+#write ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+
+#write :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+
+#write ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+
+#write :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+
+#write .write1 {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: auto;
+}
+
+#write .write1 div {
+  position: relative;
+}
+
+#write .write1 .phone {
+  height: 52px;
+  width: 100%;
+  border: solid 1px #ddd;
+}
+
+#write .write1 .phone div {
+  float: left;
+  width: 87px;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  color: #666;
+  text-align: center;
+  border-right: solid 1px #ddd;
+}
+
+#write .write1 .phone input {
+  float: left;
+  border: 0 none;
+  font-size: 14px;
+  width: 190px;
+  line-height: 19px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+#write .write1 .phone:hover {
+  border-color: #999999;
+}
+
+#write .write1 .phone .close {
+  position: absolute;
+  display: none;
+  font-size: 15px;
+  font-weight: 900;
+  color: #ddd;
+  width: 17px;
+  height: 17px;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 15px;
+}
+
+#write .write1 .phone .true {
+  background: url(../img/register/reg-icon02.png) no-repeat;
+  background-position: 0 -117px;
+  text-indent: -999px;
+}
+
+#write .write1 .verifyBox {
+  position: relative;
+  margin-top: 20px;
+  height: 52px;
+}
+
+#write .write1 #onverify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 52px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+  width: 398px;
+  height: 52px;
+  position: relative;
+  border: solid 1px #ddd;
+}
+
+#write .write1 #onverify:hover {
+  border-color: #999999;
+}
+
+#write .write1 #verifyCode {
+  display: none;
+  height: 52px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border: solid 1px #ddd;
+}
+
+#write .write1 #verifyCode label {
+  float: left;
+  width: 107px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+#write .write1 #verifyCode input {
+  float: left;
+  border: 0 none;
+  font-size: 14px;
+  width: 152px;
+  line-height: 19px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+#write .write1 #verifyCode div {
+  background: #f4f5f6;
+  color: #999;
+  float: right;
+  width: 118px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#write .write1 .btn_register {
+  margin-top: 30px;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  background: #e2231a;
+  border: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+  cursor: pointer;
+}
+
+.btn_register {
+  margin-top: 30px;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  background: #e2231a;
+  border: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+  cursor: pointer;
+}
+
+.write2 {
+  display: none;
+}
+
+.write2 > div {
+  position: relative;
+  height: 52px;
+  width: 100%;
+  margin-top: 20px;
+  border: solid 1px #ddd;
+}
+
+.write2 > div:hover {
+  border-color: #999999;
+}
+
+.write2 label {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 85px;
+  border-right: 1px solid #dddddd;
+  line-height: 50px;
+  text-align: center;
+}
+
+.write2 input {
+  display: block;
+  float: left;
+  width: 250px;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 17px 0 16px 20px;
+}
+
+.write2 div > span {
+  position: absolute;
+  display: none;
+  top: 17px;
+  right: 10px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #dddddd;
+}
+
+.write2 > p {
+  font-size: 14px;
+  color: black;
+}
+
+.tipsBox {
+  color: #c5c5c5;
+  font-size: 12px;
+  margin: 3px 0;
+  visibility: hidden;
+}
+
+.tipsBox i {
+  background-position: 0px -100px;
+}
+
+.isok {
+  color: #33BB44;
+}
+
+.mistake {
+  margin-left: 10px;
+  color: #f91;
+}
+
+.err {
+  color: #f91;
+  visibility: visible;
+}
+
+.err i {
+  background-position: -17px -100px;
+}
+
+.tips {
+  background: url(../img/register/reg-icon02.png) no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+#verify {
+  position: absolute;
+  left: 0;
+  top: -46px;
+  height: 222px;
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 0 2px 2px #eee;
+  border: 1px solid #eee;
+  padding: 18px 12px;
+  display: none;
+  z-index: 999;
+}
+
+#verify .close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/register/close.png);
+}
+
+#verify .img_box {
+  height: 100%;
+  width: 100%;
+}
+
+#verify .img_box .ver_title {
+  margin-right: 15px;
+  height: 25px;
+}
+
+#verify .img_box .ver_title .var_tips {
+  float: left;
+  font-size: 14px;
+  width: 50%;
+  color: #666;
+}
+
+#verify .img_box img {
+  height: 108px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#verify .strip {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  visibility: visible;
+  opacity: 1;
+  color: #10b2fa;
+  background: #F5FAFF;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#verify .strip #lump {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  margin-top: -6px;
+  margin-left: -6px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  cursor: pointer;
+  background: url(../img/register/jd-slide-btn2.png);
+}
+
+#verify .strip .strip_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 0px;
+  background: #42C2FC;
+}
+
+#verify #refresh {
+  float: right;
+  width: 40%;
+}
+
+#verify #refresh .txt {
+  color: #06c;
+  float: right;
+  cursor: pointer;
+}
+
+#verify #refresh .icon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background: url(../img/register/refresh.png) center center no-repeat;
+  cursor: pointer;
+}
+
+#img {
+  position: relative;
+}
+
+#img .fixation,
+#img .move {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+}
+
+#img .fixation {
+  background: #fff;
+}
+
+#img .move {
+  border: 2px solid gainsboro;
+  left: 0px;
+  background-size: 374px 108px;
+  background-repeat: no-repeat;
+}
+
+.write3 {
+  height: 200px;
+  display: none;
+}
+
+.write3 .state {
+  height: 200px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 300px;
+}
+
+#foot {
+  margin-top: 20px;
+  height: 86px;
+}
+
+#foot .foot .links {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+#foot .foot .links a {
+  color: #999;
+  margin: 0 10px;
+}
+
+#foot .foot .links a:hover {
+  color: #999;
+  text-decoration: underline;
+}
+
+#foot .foot .copyright {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+/*# sourceMappingURL=register.css.map */

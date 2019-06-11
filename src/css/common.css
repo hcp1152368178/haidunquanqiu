@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #top {
+    width: 100%;
+    height: 30px;
+    background: #f1f1f1;
+  }
+  
+  .topnav {
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .topnav .top-nav-l li {
+    height: 30px;
+    padding: 0 2px;
+  }
+  .topnav .top-nav-l li a {
+    display: block;
+    color: #9A949B;
+  }
+  .topnav .top-nav-r {
+    height: 30px;
+  }
+  .topnav .top-nav-r li {
+    float: left;
+    padding: 0 2px;
+  }
+  .topnav .top-nav-r li .dt {
+    padding: 0 8px;
+  }
+  .topnav .top-nav-r li a {
+    display: block;
+    color: #9A949B;
+  }
+  .topnav .top-nav-r .line {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    margin-right: 0;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+  }
+  
+  .guangZhu {
+    position: relative;
+  }
+  .guangZhu .guangZhu-icon {
+    color: #9A949B;
+  }
+  .guangZhu .guangZhu-icon .erweima {
+    position: absolute;
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    top: 9px;
+    left: -5px;
+    background: url(../img/index/icon.png) no-repeat -60px -39px;
+  }
+  .guangZhu .guangZhu-icon .jiankuohao {
+    position: absolute;
+    display: inline-block;
+    top: 12px;
+    right: -8px;
+    width: 11px;
+    height: 7px;
+    background: url(../img/index/icon.png) no-repeat -60px -63px;
+    transition: transform .1s ease-in 0s;
+  }
+  .guangZhu:hover .guangZhu-icon {
+    color: #863177;
+  }
+  .guangZhu:hover .guangZhu-icon .erweima {
+    background-position: -82px -39px;
+  }
+  .guangZhu:hover .guangZhu-icon .jiankuohao {
+    background-position: -82px -83px;
+  }
+
+  header {
+    width: 100%;
+  }
+  header .header {
+    height: 100px;
+  }
+  header .header .logo {
+    width: 240px;
+    height: 48px;
+    display: block;
+    margin-top: 25px;
+  }
+  header .header .search {
+    position: relative;
+    z-index: 11;
+    width: 575px;
+    height: 60px;
+    margin-top: 25px;
+    font-size: 12px;
+    margin-left: 247px;
+  }
+  header .header .search .form {
+    margin-bottom: 4px;
+  }
+  header .header .search .form .text {
+    float: left;
+    width: 463px;
+    height: 36px;
+    line-height: 24px;
+    color: #a9a4a8;
+    padding: 4px;
+    border-width: 2px 0 2px 2px;
+    border-color: #ff3e68;
+    border-style: solid;
+    outline: 0;
+    font-size: 14px;
+  }
+  header .header .search .form .button {
+    float: left;
+    width: 102px;
+    height: 36px;
+    background: #ff3e68;
+    border: none;
+    line-height: 1;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  header .header .search .hot {
+    float: left;
+    width: 470px;
+    height: 20px;
+    color: #9A949B;
+    line-height: 20px;
+    overflow: hidden;
+  }
+  header .header .search .hot a {
+    float: left;
+    white-space: nowrap;
+    margin-right: 10px;
+    color: #a9a4a8;
+  }
+  header .header .shopcart {
+    z-index: 11;
+    height: 36px;
+    margin-top: 25px;
+  }
+  header .header .shopcart a {
+    position: relative;
+    display: block;
+    width: 147px;
+    height: 35px;
+    border: 1px solid #ff3e68;
+    padding: 0 2px 0 26px;
+    background: #ff3e68;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  header .header .shopcart a i {
+    position: absolute;
+    display: inline-table;
+    color: #fff;
+    width: 17px;
+    height: 18px;
+    left: 8px;
+    top: 8px;
+    background: url(../img/index/icon.png) no-repeat -58px 0px;
+  }
+  header .header .shopcart a span {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  nav {
+    width: 100%;
+    border-bottom: 1px solid #312B30;
+  }
+  nav .navbox {
+    height: 43px;
+  }
+  nav .navbox .nav {
+    line-height: 42px;
+    position: relative;
+    height: 42px;
+  }
+  nav .navbox .nav li {
+    float: left;
+  }
+  nav .navbox .nav li a {
+    color: #fff;
+  }
+  nav .navbox .nav .allnav {
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 242px;
+    height: 42px;
+    overflow: visible;
+    background: #312B30;
+    border-bottom: 2px solid #312B30;
+  }
+  nav .navbox .nav .allnav > a {
+    display: block;
+    width: 184px;
+    height: 42px;
+    line-height: 44px;
+    font-size: 16px;
+    padding: 0 10px 0 46px;
+    background: #312B30;
+    color: #fff;
+  }
+  nav .navbox .nav .allnav > a i {
+    background: url(../img/index/icon.png);
+    background-repeat: no-repeat;
+    background-position: -53px -131px;
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    top: 15px;
+    right: 204px;
+  }
+  nav .navbox .nav .allnav .dd {
+    width: 242px;
+    height: 526px;
+    background-color: #312b30;
+  }
+  nav .navbox .nav .allnav .dd-inner {
+    padding: 1px 0 0 10px;
+    width: 232px;
+    height: 516px;
+  }
+  nav .navbox .nav .allnav .item {
+    position: relative;
+    z-index: 1;
+    height: 33px;
+    color: #fff;
+    margin-top: 10px;
+  }
+  nav .navbox .nav .allnav h3 {
+    float: left;
+    z-index: 2;
+    height: 33px;
+    padding: 0 13px 0 35px;
+    line-height: 33px;
+    font-size: 14px;
+  }
+  nav .navbox .nav .allnav h3 i {
+    background: url(../img/index/icon.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 6px;
+    right: 194px;
+    background-position: -28px 0;
+  }
+  nav .navbox .nav .allnav h3 a {
+    color: #FFF;
+  }
+  nav .navbox .nav .allnav h4 {
+    float: left;
+    z-index: 2;
+    width: 48px;
+    height: 33px;
+    overflow: hidden;
+    padding: 0 5px 0 2px;
+    line-height: 33px;
+    font-weight: normal;
+  }
+  nav .navbox .nav .allnav h4 a {
+    font-size: 14px;
+    color: #C0B6C2;
+    opacity: .91;
+  }
+  nav .navbox .nav .allnav .r-jianhao {
+    position: absolute;
+    background: url(../img/index/icon.png) -60px -102px no-repeat;
+    background-repeat: no-repeat;
+    background-position: -60px -102px;
+    width: 6px;
+    height: 9px;
+    top: 11px;
+    right: 20px;
+  }
+  nav .navbox .nav .shouye {
+    width: 66px;
+    height: 40px;
+    text-align: center;
+  }
+  nav .navbox .nav .shouye a {
+    color: black;
+  }
+  nav .navbox .nav .shouye a:hover {
+    color: #863177;
+  }
+  nav .navbox .nav > .dd {
+    width: 88px;
+    height: 40px;
+    text-align: center;
+  }
+
+/*尾部开始*/
+#footbox{
+    background: #FF3E68;
+}
+#foot {
+  height: 254px;
+  background: #FF3E68;
+  margin-top: 60px;
+}
+#foot .foot {
+  margin-top: 40px;
+  background: #FF3E68;
+}
+#foot .foot .ft_logo {
+  float: left;
+  height: 59px;
+  width: 150px;
+  background: url(../img/index/ft_logo.png);
+}
+#foot .foot .content {
+  margin-left: 43px;
+  height: 128px;
+  padding-top: 6px;
+}
+#foot .foot .content ul {
+  height: 100%;
+  width: 100%;
+}
+#foot .foot .content ul li {
+  float: left;
+  padding-left: 64px;
+  width: 199px;
+}
+#foot .foot .content ul li p {
+  width: 72px;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: white;
+}
+#foot .foot .content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 22px;
+  color: #d6d6d6;
+}
+#foot .foot .content ul li a:hover {
+  text-decoration: underline;
+}
+#foot .foot .copy {
+  width: 100%;
+  padding-top: 35px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
