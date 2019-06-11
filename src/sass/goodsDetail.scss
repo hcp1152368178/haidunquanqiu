@@ -1,0 +1,607 @@
+@charset "utf-8";
+#shop {
+    padding: 25px 0 5px;
+    border-bottom: 2px solid #000;
+    .shop {
+        line-height: 24px;
+        height: 24px;
+        .shop_box {
+            float: right;
+            & > i{
+                float: left;
+                margin: 4px 5px 0 0;
+                width: 15px;
+                height: 14px;
+                background-image: url(../img/index/det_desprite.png);
+                background-position: -50px 0;
+            }
+            a {
+                float: left;
+                height: 24px;
+                line-height: 22px;
+                color: #000;
+                display: block;
+                font-weight: 900;
+                &:hover {
+                    color: #FF3E68;
+                }
+            }
+            .star {
+                float: left;
+                margin: 3px 0 0 15px;
+                .starbg {
+                    width: 94px;
+                    height: 16px;
+                    border-radius: 8px;
+                    background: #e6e6e6;
+                    overflow: hidden;
+                    .stargrey {
+                        position: relative;
+                        width: 80px;
+                        height: 14px;
+                        margin: 1px 0 0 7px;
+                        background: url(../img/index/star-gray.png) left center repeat-x;
+                        .starlinght {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 14px;
+                            background: url(../img/index/star-light.png) left center repeat-x;
+                            width: 72px;
+                        }
+                    }
+                }
+            }
+            .line {
+                float: left;
+                width: 1px;
+                height: 12px;
+                margin: 7px 15px 0;
+                padding: 0;
+                background: #dcdcdc;
+                overflow: hidden;
+            }
+            .service {
+                cursor: pointer;
+                float: left;
+                margin-right: 10px;
+                white-space: nowrap;
+                font-size: 12px;
+                i {
+                   width: 16px;
+                   height: 16px;
+                   background-image: url(../img/index/det_desprite.png);
+                   background-position: 0 -34px;
+                   vertical-align: top;
+                   margin-top: 5px;
+                 }
+                &:hover {
+                    color: #FF3E68;
+                  }
+            }
+            .attention {
+                float: left;
+                width: 85px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                margin-left: 10px;
+                cursor: pointer;
+                i {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url(../img/index/det_desprite.png);
+                    background-position: -34px 0;
+                    vertical-align: top;
+                    margin-top: 4px;
+                  }
+                &:hover span {
+                    color: #FF3E68;
+                  }
+            }
+        }
+    }
+  }
+
+  /*商品内容*/
+  #content {
+    position: relative;
+    margin: 30px 0;
+  }
+  #content .boxleft {
+    width: 452px;
+    float: left;
+    position: relative;
+  }
+  #content .boxleft .imgBox {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: move;
+  }
+  #content .boxleft .imgBox img {
+    height: 450px;
+    width: 450px;
+  }
+  #content .boxleft #showing {
+    display: none;
+    position: absolute;
+    height: 565px;
+    width: 565px;
+    top: 0;
+    right: -128%;
+    z-index: 999;
+    background-position: 0px 0px;
+    background-size: 831px 831px  ;
+  }
+  #content .boxleft .imglis {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  #content .boxleft .imglis .ulBox {
+    width: 404px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #content .boxleft .imglis .ulBox li {
+    float: left;
+    width: 128px;
+    height: 200px;
+    margin: 0 3px;
+    opacity: .5;
+  }
+  #content .boxleft .imglis .ulBox li img {
+    width: 75px;
+    height: 75px;
+  }
+  #content .boxleft .imglis .ulBox .opc {
+    opacity: 1;
+  }
+  #content .boxleft .share {
+    font-size: 12px;
+  }
+  #content .boxleft .share a {
+    color: #000;
+  }
+  #content .boxleft .share a:hover {
+    color: #ff3e68;
+  }
+  #content .boxleft .share .shareleft {
+    float: left;
+  }
+  #content .boxleft .share .shareleft a {
+    margin-left: 10px;
+  }
+  #content .boxleft .share .shareleft i {
+    width: 11px;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: -1px;
+    display: inline-block;
+    background-image: url(../img/index/__sprite.png);
+  }
+  #content .boxleft .share .shareleft a:nth-child(1) i {
+    background-position: -40px -24px;
+  }
+  #content .boxleft .share .shareleft a:nth-child(1) i:hover {
+    background-position: -51px -24px;
+  }
+  #content .boxleft .share .shareleft a:nth-child(2) i {
+    width: 14px;
+    background-position: 0px -24px;
+  }
+  #content .boxleft .share .shareleft a:nth-child(1):hover > i {
+    background-position: -51px -24px;
+  }
+  #content .boxleft .share .shareleft a:nth-child(2):hover > i {
+    background-position: -14px -24px;
+  }
+  #content .boxleft .share .shareright {
+    float: right;
+  }
+  #content .boxcenter {
+    width: 525px;
+    float: left;
+    margin-left: 20px;
+  }
+  #content .boxcenter .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+  #content .boxcenter .item {
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #d91f20;
+  }
+  #content .boxcenter .priceBox {
+    padding-bottom: 5px;
+  }
+  #content .boxcenter .priceBox .summary {
+    padding: 20px 20px 8px;
+    margin-bottom: 10px;
+    background: #f8f8f8;
+    color: #000;
+  }
+  #content .boxcenter .priceBox p {
+    margin-bottom: 14px;
+  }
+  #content .boxcenter .priceBox p span:nth-child(1) {
+    color: #939393;
+    font-size: 12px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+  #content .boxcenter .priceBox .price b {
+    font-size: 26px;
+    color: #dc1d20;
+  }
+  #content .boxcenter .priceBox .discounts .text {
+    padding: 0 10px;
+    color: #df3033;
+    height: 16px;
+    padding-left: 2px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #df3033;
+    background: #ffdedf;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-right: 13px;
+    cursor: pointer;
+  }
+  #content .boxcenter .priceBox .discounts .text:hover {
+    background: #f4edee;
+  }
+  #content .boxcenter .repertory {
+    height: 24px;
+    padding-left: 20px;
+  }
+  #content .boxcenter .repertory span {
+    margin-right: 25px;
+  }
+  #content .boxcenter .addcar {
+    margin-bottom: 20px;
+    padding: 40px 10px 0 0;
+  }
+  #content .boxcenter .addcar .input_num {
+    width: 49px;
+    height: 48px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+  }
+  #content .boxcenter .addcar .input_num .number {
+    float: left;
+    display: block;
+    width: 31px;
+    height: 44px;
+    line-height: 42px;
+    border: none;
+    border: 0;
+    text-align: center;
+  }
+  #content .boxcenter .addcar .input_num .add {
+    float: right;
+    height: 100%;
+    width: 15px;
+  }
+  #content .boxcenter .addcar .input_num .add input {
+    height: 24px;
+    width: 16px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    cursor: pointer;
+  }
+  #add{
+      position: absolute;
+      top: -1px;
+  }
+  #des{
+    position: absolute;
+    bottom: 0px;
+}
+  #content .boxcenter .addcar .car {
+    margin-right: 10px;
+    float: left;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff3e68;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  #content .boxcenter .addcar .car_disable {
+    border: 1px solid #ebebeb;
+    color: #ccc;
+    background-color: #f7f7f7;
+    cursor: not-allowed;
+  }
+  .boxright {
+      position: relative;
+    width: 170px;
+    padding: 18px 20px 16px;
+    border: 1px solid #dadada;
+    float: right;
+  }
+  .boxright .extra {
+    position: relative;
+    line-height: 16px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+  }
+  .boxright .extra .extra_title {
+    font-size: 14px;
+    background: #fff;
+    padding: 0 10px;
+    line-height: 16px;
+    font-weight: 900;
+  }
+  .boxright .extra .lis {
+    padding-top: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 128px;
+    height: 600px;
+  }
+  .boxright .extra .lis ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .boxright .extra .lis ul li {
+    position: relative;
+    width: 128px;
+    height: 200px;
+    padding: 10px 0;
+  }
+  .boxright .extra .lis ul li img {
+    height: 128px;
+    width: 128px;
+  }
+  .boxright .extra .lis ul li p {
+    padding-top: 16px;
+    height: 52px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+  .boxright .extra .lis ul li .priceright {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0 10px;
+    color: #000;
+  }
+  .boxright .extra .lis ul li:hover .priceright,
+  .boxright .extra .lis ul li:hover p {
+    color: #dc1d20;
+  }
+  .boxright .extra .more {
+    padding-top: 15px;
+    text-align: center;
+    clear: both;
+  }
+  .boxright .extra .more .up,
+  .boxright .extra .more .below {
+    display: inline-block;
+    background: url(../img/index/more_sprite.png);
+    width: 28px;
+    height: 15px;
+    margin: 0 10px;
+  }
+  .boxright .extra .more .up {
+    background-position: -28px 0;
+  }
+  #referrer {
+    margin-top: 20px;
+  }
+  #referrer .referrer .ref_title {
+    background: #F8F8F8;
+    height: 38px;
+    font-size: 14px;
+  }
+  #referrer .referrer .ref_title span {
+    border-top: 2px solid #000;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    padding: 8px 25px 10px;
+    background: #fff;
+    color: #000;
+    cursor: default;
+    float: left;
+  }
+  #referrer .referrer .ref_content {
+    padding: 20px 0 12px 15px;
+    border: 1px solid #dadada;
+    border-top: none;
+  }
+  #referrer .referrer .ref_content li {
+    width: 160px;
+    float: left;
+    margin: 0 18px;
+  }
+  #referrer .referrer .ref_content li img {
+    width: 160px;
+    height: 160px;
+  }
+  #referrer .referrer .ref_content li p {
+    height: 38px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #referrer .referrer .ref_content li p:hover {
+    color: #C81623;
+  }
+  #referrer .referrer .ref_content li b {
+    color: #e4393c;
+    font-size: 14px;
+  }
+  #pre,
+  #next {
+    display: block;
+    width: 16px;
+    height: 75px;
+    color: #999;
+    line-height: 75px;
+    border: 1px solid #eee;
+    background: #f8f8f8;
+    position: absolute;
+    cursor: pointer;
+  }
+  #next {
+    top: 0;
+    right: 0;
+  }
+  #pre {
+    top: 0;
+    left: 0;
+  }
+  #shade {
+    position: absolute;
+    display: none;
+    height: 68%;
+    width: 68%;
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    border: 1px solid #aaa;
+    background: 50% top no-repeat #fede4f;
+    opacity: .5;
+  }
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    
+    .fixtop {
+        position: absolute;
+        top: 35%;
+        left: -29px;
+        width: 35px;
+        .carts i {
+            background: url(../img/index/sprite-02-cart.png) no-repeat center;
+        }
+        .ticket i {
+            background: url(../img/index/toolbars.png) -190px -100px no-repeat;
+        }
+        .trigger i {
+            background: url(../img/index/communication-icon.png)no-repeat center;
+        }
+    }
+    .fixbottom {
+        position: absolute;
+        bottom: 1px;
+        left: -29px;
+        width: 35px;
+        .qrcode{
+            i {
+                background: url(../img/index/qrcode.gif) no-repeat center;
+            }
+            .jdcode {
+                display: none;
+                padding: 12px;
+                border-radius: 5px;
+                position: absolute;
+                left: -142px;
+                top: -152px;
+                background: #ff3e68;
+                color: #fff;
+                font-size: 14px;
+                span {
+                    position: absolute;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    background: #ff3e68;
+                    border-radius: 10px;
+                    right: -5px;
+                    top: -5px;
+                    width: 15px;
+                    height: 15px;
+                    text-align: center;
+                    font: 15px/15px simsun;
+                }
+                p {
+                    color: #fff;
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+                &:hover .jdcode {
+                    display: block;
+                }
+            }
+        }
+        .feedback i {
+            background: url(../img/index/toolbars.png) -50px -300px no-repeat;
+        }
+        .backtop i {
+            background: url(../img/index/toolbars.png) -50px -250px no-repeat;
+        }
+    }
+    a {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #7a6e6e;
+        i {
+            display: block;
+            width: 34px;
+            height: 35px;
+            position: relative;
+            z-index: 66;
+            background-color: #7a6e6e;
+        }
+        em {
+            width: 80px;
+            height: 35px;
+            line-height: 35px;
+            color: #ffffff;
+            text-align: center;
+            font-family: 微软雅黑;
+            position: absolute;
+            z-index: 1;
+            left: 35px;
+            top: 0px;
+            background-color: #7a6e6e;
+            border-radius: 3px 0px 0px 3px;
+            transition: left 0.3s ease-in-out 0.1s;
+        }
+        &:hover em {
+            left: -80px;
+        }
+        &:hover,&:hover i,&:hover em {
+            background-color: #ff3e68;
+        }
+    }
+}
+
+  
+ 
