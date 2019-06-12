@@ -8,9 +8,15 @@
 
     $url = "http://v.juhe.cn/sms/send";
     $params = array(
+<<<<<<< HEAD
         'key'   => '###', //您申请的APPKEY
         'mobile'    => $userphone, //接受短信的用户手机号码
         'tpl_id'    => '159261', //您申请的短信模板ID，根据实际情况修改
+=======
+        'key'   => 'a6ff6f8380b573903f78905ac4da1da4', //您申请的APPKEY
+        'mobile'    => $userphone, //接受短信的用户手机号码
+        'tpl_id'    => '159005', //您申请的短信模板ID，根据实际情况修改
+>>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         'tpl_value' =>'#code#='.$num.'&#company#=聚合数据' //您设置的模板变量，根据实际情况修改
     );
 

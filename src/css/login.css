@@ -1,418 +1,46 @@
-#header {
-  height: 80px;
-}
+/*
+Error: Invalid CSS after "....png) no-repeat": expected "{", was ";"
+        on line 81 of F:\website\php\vscode\haitunquanqiu\src\sass\login.scss
 
-#header h1 {
-  float: left;
-  height: 60px;
-  width: 300px;
-  margin: 10px 0;
-}
+76:   }
+77:   #logo .logo {
+78:     position: relative;
+79:     height: 100%;
+80: <<<<<<< HEAD
+81:     background: url(../img/login/bg.png) no-repeat;
+82: =======
+83:     background: url(../img/login/logoImg.jpg) no-repeat;
+84: >>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
+85:   }
+86:   #logo .logo .from {
 
-#header h1 a {
-  display: block;
-  float: left;
-  height: 60px;
-  width: 170px;
-  overflow: hidden;
-  text-indent: -9000px;
-  background: url(../img/login/login_logo.png) no-repeat;
-  background-size: 170px 60px;
-}
-
-#header h1 i {
-  display: block;
-  float: left;
-  height: 40px;
-  width: 110px;
-  margin: 20px 0 0 20px;
-  background: url(../img/login/l-icon.png);
-}
-
-.header > a {
-  display: block;
-  float: right;
-  width: auto;
-  height: auto;
-  color: #999;
-  font-size: 12px;
-  margin-top: 40px;
-}
-
-.header > a i {
-  display: block;
-  float: left;
-  width: 18px;
-  height: 14px;
-  margin: 3px 5px;
-  background: url(../img/login/q-icon.png);
-}
-
-.header > a:hover {
-  color: #E4393C;
-  text-decoration: underline;
-}
-
-#tips {
-  background: #fff8f0;
-}
-
-.tips {
-  background: #fff8f0;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.tips i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  margin-right: 5px;
-  background: url(../img/login/icon-tips.png);
-}
-
-.tips span {
-  vertical-align: middle;
-  color: #999;
-  font-size: 12px;
-  display: inline-block;
-}
-
-#logo {
-  height: 475px;
-  background: #e93854;
-}
-
-#logo .logo {
-  position: relative;
-  height: 100%;
-  background: url(../img/login/bg.png) no-repeat;
-}
-
-#logo .logo .from {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 346px;
-  height: auto;
-  background: #fff;
-}
-
-#logo .logo .from .type {
-  height: 55px;
-  border-bottom: 1px solid #f4f4f4;
-  background: #fff;
-  text-align: center;
-  line-height: 55px;
-}
-
-#logo .logo .from .type a {
-  font-weight: 700;
-  color: #e4393c;
-  font-size: 18px;
-}
-
-#logo .logo .from .error {
-  margin: 3px 0;
-  background: #ffebeb;
-  color: #e4393c;
-  border: 1px solid #faccc6;
-  line-height: 20px;
-  height: 20px;
-  font-size: 12px;
-  visibility: hidden;
-}
-
-#logo .logo .from .error .i_error {
-  display: block;
-  float: left;
-  height: 16px;
-  width: 16px;
-  margin: 1px 12px;
-  background: url(../img/login/pwd-icons-new.png) -104px -49px no-repeat;
-}
-
-#logo .logo .from .error span {
-  display: block;
-  float: left;
-  height: 16px;
-  width: auto;
-  line-height: 16px;
-  margin: 1px;
-}
-
-#logo .logo .from .content {
-  padding: 0 20px 20px;
-}
-
-#logo .logo .from .content .inp_box {
-  height: 40px;
-  border: 1px solid #bdbdbd;
-  margin-bottom: 20px;
-}
-
-#logo .logo .from .content p {
-  position: relative;
-}
-
-#logo .logo .from .content p .clear {
-  position: absolute;
-  top: 12px;
-  right: 6px;
-  display: none;
-  height: 14px;
-  width: 14px;
-  background: url(../img/login/pwd-icons-new.png) -25px -143px no-repeat;
-  cursor: pointer;
-}
-
-#logo .logo .from .content p label {
-  display: block;
-  float: left;
-  height: 38px;
-  width: 39px;
-  border-right: 1px solid #bdbdbd;
-  background: url(../img/login/pwd-icons-new.png) no-repeat;
-}
-
-#logo .logo .from .content p input {
-  display: block;
-  float: left;
-  height: 38px;
-  width: 264px;
-  padding: 10px 0 10px 16px;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-#logo .logo .from .content .forget {
-  margin-bottom: 20px;
-  font-size: 12px;
-  text-align: right;
-}
-
-#logo .logo .from .content .forget a {
-  color: #666;
-}
-
-#logo .logo .from .content #btn {
-  border: 1px solid #e85356;
-  display: block;
-  width: 302px;
-  background: #e4393c;
-  height: 31px;
-  line-height: 31px;
-  color: #fff;
-  font-size: 20px;
-  font-family: 'Microsoft YaHei';
-  cursor: pointer;
-}
-
-#logo .logo .from .content .psw {
-  background-position: -48px 0;
-}
-
-#logo .logo .from .content .focus {
-  background-position-y: -48px;
-}
-
-#logo .logo .from .content .error_p {
-  border-color: #e4393c;
-}
-
-#logo .logo .from .content .error_p > label {
-  background-position-y: -96px;
-  border-color: #e4393c;
-}
-
-#logo .logo .from .register {
-  padding-right: 20px;
-  line-height: 50px;
-  border-top: 1px solid #f4f4f4;
-  height: auto;
-  background-color: #fcfcfc;
-  text-align: right;
-}
-
-#logo .logo .from .register a {
-  color: #b61d1d;
-  font-size: 14px;
-  line-height: 16px;
-  vertical-align: middle;
-}
-
-#logo .logo .from .register a:hover {
-  text-decoration: underline;
-}
-
-#logo .logo .from .register a i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
-  background: url(../img/login/pwd-icons-new.png) -104px -75px no-repeat;
-  margin-right: 5px;
-  vertical-align: middle;
-  margin-bottom: 3px;
-}
-
-#verify {
-  position: absolute;
-  left: 21px;
-  top: 46px;
-  height: 222px;
-  width: 304px;
-  background: #fff;
-  box-shadow: 0 0 2px 2px #eee;
-  border: 1px solid #eee;
-  padding: 18px 12px;
-  display: none;
-}
-
-#verify .close {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url(../img/login/close.png);
-}
-
-#verify .img_box {
-  height: 100%;
-  width: 100%;
-}
-
-#verify .img_box .ver_title {
-  margin-right: 15px;
-  height: 25px;
-}
-
-#verify .img_box .ver_title .var_tips {
-  float: left;
-  font-size: 14px;
-  width: 50%;
-  color: #666;
-}
-
-#verify .img_box img {
-  height: 108px;
-  width: 278px;
-  margin-bottom: 10px;
-}
-
-#verify .strip {
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 14px;
-  visibility: visible;
-  opacity: 1;
-  color: #10b2fa;
-  background: #F5FAFF;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-#verify .strip #lump {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  margin-top: -6px;
-  margin-left: -6px;
-  width: 55px;
-  height: 55px;
-  border-radius: 40px;
-  cursor: pointer;
-  background: url(../img/login/jd-slide-btn2.png);
-}
-
-#verify .strip .strip_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 0px;
-  background: #42C2FC;
-}
-
-#verify #refresh {
-  float: right;
-  width: 40%;
-}
-
-#verify #refresh .txt {
-  color: #06c;
-  float: right;
-  cursor: pointer;
-}
-
-#verify #refresh .icon {
-  width: 20px;
-  height: 20px;
-  float: right;
-  background: url(../img/login/refresh.png) center center no-repeat;
-  cursor: pointer;
-}
-
-#img {
-  position: relative;
-}
-
-#img .fixation,
-#img .move {
-  position: absolute;
-  height: 38px;
-  width: 38px;
-}
-
-#img .fixation {
-  background: #fff;
-}
-
-#img .move {
-  border: 2px solid gainsboro;
-  left: 0px;
-  background-size: 278px 108px;
-  background-repeat: no-repeat;
-}
-
-#foot {
-  margin-top: 20px;
-  height: 86px;
-}
-
-#foot .foot .links {
-  text-align: center;
-  font-size: 12px;
-}
-
-#foot .foot .links a {
-  color: #666;
-  margin: 0 10px;
-}
-
-#foot .foot .links a:hover {
-  color: #E4393C;
-  text-decoration: underline;
-}
-
-#foot .foot .copyright {
-  margin: 10px 0;
-  font-size: 12px;
-  color: #666;
-}
-
-.con {
-  width: 990px;
-  margin: 0 auto;
-}
-
-/*# sourceMappingURL=login.css.map */
+Backtrace:
+F:\website\php\vscode\haitunquanqiu\src\sass\login.scss:81
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"....png) no-repeat\": expected \"{\", was \";\"\A         on line 81 of F:\website\php\vscode\haitunquanqiu\src\sass\login.scss\A \A 76:   }\A 77:   #logo .logo {\A 78:     position: relative;\A 79:     height: 100%;\A 80: <<<<<<< HEAD\A 81:     background: url(../img/login/bg.png) no-repeat;\A 82: =======\A 83:     background: url(../img/login/logoImg.jpg) no-repeat;\A 84: >>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807\A 85:   }\A 86:   #logo .logo .from {"; }

@@ -167,7 +167,10 @@
   background-size: 27px 44px;
   background-position: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   color: #FFF;
+=======
+>>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {

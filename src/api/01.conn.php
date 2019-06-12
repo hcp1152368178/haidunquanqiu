@@ -4,7 +4,11 @@
     $severname = "localhost";
     $username = "root";
     $pwd = "";
+<<<<<<< HEAD
     $dbname = "jdhk";
+=======
+    $dbname = "jianyi";
+>>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
 
     //2.创建链接
     $conn = new mysqli($severname,$username,$pwd,$dbname);
