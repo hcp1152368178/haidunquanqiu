@@ -17,17 +17,23 @@
 //  var_dump($index,$order,$tab,$title,$min,$max,$keyword);
     if($keyword == ''){
 
-        $sql = "SELECT * FROM cargo";
+        $index = ($page - 1) * $num;
+        //1.sql语句
+        $sql = "SELECT * FROM cargo LIMIT $index,$num";
         $res = $conn->query($sql);
-    
+
         //  var_dump($res);//结果集，想要内容
             
         //3.获取结果集里面的内容
         $content = $res->fetch_all(MYSQLI_ASSOC);
+
+        $sql2 = "SELECT * FROM cargo";
+        $res2 = $conn->query($sql2);
+
             
         //关联数组：存多一点数据再给前端
         $data = array(
-            'lis' => $res->num_rows,//总条数
+            'lis' => $res2->num_rows,//总条数
             'content' => $content,//所有内容
             'page' => $page,//页数
             'num' => $num//每页的总条数
@@ -57,8 +63,11 @@
 //   echo json_encode($res,JSON_UNESCAPED_UNICODE);
      echo json_encode(
         [
-            'lis' => $lis->num_rows,
-            'res' => $res
+            'lis' => $lis->num_rows,//总条数
+            // 'res' => $res
+            'content' => $content,//所有内容
+            'page' => $page,//页数
+            'num' => $num//每页的总条数
         ]
     ,JSON_UNESCAPED_UNICODE);
     	

@@ -3,98 +3,6 @@ body{
     width: 100%;
     height: 100%;
 }
-<<<<<<< HEAD
-=======
-// 顶部导航栏
-// *{
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
-// #top{
-//     width: 100%;
-//     height: 30px;
-//     background: #f1f1f1;
-// }
-// .topnav{
-//     line-height: 30px;
-//     font-size: 12px;
-//     // 导航栏左边
-//     .top-nav-l{
-//         li{
-//             height: 30px;
-//             padding: 0 2px;
-//             a{
-//                 display: block;
-//                 color: #9A949B;
-//             }
-//         }
-//     }
-//     // 导航栏右边
-//     .top-nav-r{
-//         height: 30px;
-//         li{
-//             float: left;
-//             padding: 0 2px;
-//             .dt{
-//                 padding: 0 8px;
-//             }
-//             a{
-//                 display: block;
-//                 color: #9A949B;
-//             }
-//         }
-//         .line{
-//             width: 1px;
-//             height: 12px;
-//             margin-top: 9px;
-//             margin-right: 0;
-//             padding: 0;
-//             background: #ddd;
-//             overflow: hidden;
-//         }
-//     }
-// }
-// .guangZhu{
-//     position: relative;
-//     .guangZhu-icon{
-//         color: #9A949B;
-//         .erweima{
-//             position: absolute;
-//             display: inline-block;
-//             width: 11px;
-//             height: 10px;
-//             top: 9px;
-//             left: -5px;
-//             background: url(../img/index/icon.png) no-repeat -60px -39px;
-//         }
-//         .jiankuohao{
-//             position: absolute;
-//             display: inline-block;
-//             top: 12px;
-//             right: -8px;
-//             width: 11px;
-//             height: 7px;
-//             background: url(../img/index/icon.png) no-repeat -60px -63px;
-//             transition: transform .1s ease-in 0s;
-//         }
-//     }
-//     &:hover{
-//         .guangZhu-icon{
-//             color: #863177;
-//             .erweima{
-//                 background-position: -82px -39px;
-//             }
-//             .jiankuohao{
-//                 background-position: -82px -83px;
-//             }
-//         }
-//     }
-// }
-
-
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
 // 广告图
 #adv{
     width: 100%;
@@ -107,236 +15,6 @@ body{
         height: 100%;
     }
 }
-<<<<<<< HEAD
-=======
-
-// // header
-// header{
-//     width: 100%;
-//     .header{
-//         height: 100px;
-//         .logo{
-//             width: 240px;
-//             height: 48px;
-//             display: block;
-//             margin-top: 25px;
-//         }
-//         .search{
-//             position: relative;
-//             z-index: 11;
-//             width: 575px;
-//             height: 60px;
-//             margin-top: 25px;
-//             font-size: 12px;
-//             margin-left: 247px;
-//             .form{
-//                 margin-bottom: 4px;
-//                 .text{
-//                     float: left;
-//                     width: 463px;
-//                     height: 36px;
-//                     line-height: 24px;
-//                     color: #a9a4a8;
-//                     padding: 4px;
-//                     border-width: 2px 0 2px 2px;
-//                     border-color: #ff3e68;
-//                     border-style: solid;
-//                     outline: 0;
-//                     font-size: 14px;
-//                 }
-//                 .button {
-//                     float: left;
-//                     width: 102px;
-//                     height: 36px;
-//                     background: #ff3e68;
-//                     border: none;
-//                     line-height: 1;
-//                     color: #fff;
-//                     font-size: 16px;
-//                     cursor: pointer;
-//                 }
-//             }
-
-//             .hot{
-//                 float: left;
-//                 width: 470px;
-//                 height: 20px;
-//                 color: #9A949B;
-//                 line-height: 20px;
-//                 overflow: hidden;
-//                 a {
-//                     float: left;
-//                     white-space: nowrap;
-//                     margin-right: 10px;
-//                     color: #a9a4a8;
-//                 }
-//             }
-//         }
-//         .shopcart{
-//             z-index: 11;
-//             height: 36px;
-//             margin-top: 25px;
-//             a{
-//                 position: relative;
-//                 display: block;
-//                 width: 147px;
-//                 height: 35px;
-//                 border: 1px solid #ff3e68;
-//                 padding: 0 2px 0 26px;
-//                 background: #ff3e68;
-//                 text-align: center;
-//                 line-height: 35px;
-//                 cursor: pointer;
-//                 text-decoration: none;
-//                 i{
-//                     position: absolute;
-//                     display: inline-table;
-//                     color: #fff;
-//                     width: 17px;
-//                     height: 18px;
-//                     left: 8px;
-//                     top: 8px;
-//                     background:url(../img/index/icon.png) no-repeat -58px 0px;
-//                 }
-//                 span{
-//                     color: #fff;
-//                     font-size: 16px;
-//                 }
-//             }
-//         }
-//     }
-// }
-// // nav 导航
-// nav{
-//     width: 100%;
-//     border-bottom: 1px solid #312B30;
-//     .navbox{
-//         height: 43px;
-//         .nav{
-//             line-height: 42px;
-//             position: relative;
-//             height: 42px;
-            
-//             li{
-//                 float: left;
-//                 a{
-//                     color: #fff;
-//                 }
-//             }
-//             .allnav{
-//                 float: left;
-//                 position: relative;
-//                 z-index: 10;
-//                 width: 242px;
-//                 height: 42px;
-//                 overflow: visible;
-//                 background: #312B30;
-//                 border-bottom: 2px solid #312B30;
-//                 &>a{
-//                     display: block;
-//                     width: 184px;
-//                     height: 42px;
-//                     line-height: 44px;
-//                     font-size: 16px;
-//                     padding: 0 10px 0 46px;
-//                     background: #312B30;
-//                     color: #fff;
-//                     i {
-//                         background: url(../img/index/icon.png);
-//                         background-repeat: no-repeat;
-//                         background-position: -53px -131px;
-//                         width: 16px;
-//                         height: 14px;
-//                         position: absolute;
-//                         top: 15px;
-//                         right: 204px;
-//                     }
-//                 }
-//                 .dd{
-//                     width: 242px;
-//                     height: 526px;
-//                     background-color: #312b30;
-//                 }
-//                 .dd-inner {
-//                     padding: 1px 0 0 10px;
-//                     width: 232px;
-//                     height: 516px;
-//                 }
-//                 .item {
-//                     position: relative;
-//                     z-index: 1;
-//                     height: 33px;
-//                     color: #fff;
-//                     margin-top: 10px;
-//                 }
-//                 h3 {
-//                     float: left;
-//                     z-index: 2;
-//                     height: 33px;
-//                     padding: 0 13px 0 35px;
-//                     line-height: 33px;
-//                     font-size: 14px;
-//                     i {
-//                         background: url(../img/index/icon.png);
-//                         background-repeat: no-repeat;
-//                         position: absolute;
-//                         width: 18px;
-//                         height: 20px;
-//                         top: 6px;
-//                         right: 194px;
-//                         background-position: -28px 0;
-//                     }
-//                     a{
-//                         color: #FFF;
-//                     }
-//                 }
-//                 h4 {
-//                     float: left;
-//                     z-index: 2;
-//                     width: 48px;
-//                     height: 33px;
-//                     overflow: hidden;
-//                     padding: 0 5px 0 2px;
-//                     line-height: 33px;
-//                     font-weight: normal;
-//                     a {
-//                         font-size: 14px;
-//                         color: #C0B6C2;
-//                         opacity: .91;
-//                     }
-//                 }
-//                 .r-jianhao {
-//                     position: absolute;
-//                     background:url(../img/index/icon.png) -60px -102px no-repeat;
-//                     background-repeat: no-repeat;
-//                     background-position: -60px -102px;
-//                     width: 6px;
-//                     height: 9px;
-//                     top: 11px;
-//                     right: 20px;
-//                 }
-//             }
-//             .shouye{
-//                 width: 66px;
-//                 height: 40px;
-//                 text-align: center;
-//                 a{
-//                     color: black;
-//                     &:hover{
-//                         color: #863177
-//                     }
-//                 }
-//             }
-//             & > .dd{
-//                 width: 88px;
-//                 height: 40px;
-//                 text-align: center;
-//             }
-//         }
-//     }
-// }
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
 // main 主体
 main{
     width: 100%;
@@ -352,10 +30,7 @@ main{
     // height: 535px;
     .swiper-wrapper{
         text-align: center;
-<<<<<<< HEAD
         left: -1px;
-=======
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         img{
             width: 726px;
             height: 369px;
@@ -367,11 +42,7 @@ main{
 .l-pic{
     position: absolute;
     top: 0;
-<<<<<<< HEAD
     left:-145px;
-=======
-    left:-147px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     height: 527px;
     width: 300px;
     z-index: 30;
@@ -380,11 +51,7 @@ main{
 .r-pic{
     position: absolute;
     top: 0;
-<<<<<<< HEAD
     right: -145px;
-=======
-    right: -147px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     height: 527px;
     width: 300px;
     z-index: 30;
@@ -394,11 +61,7 @@ main{
 // 服务
 .saleList {
     width: 727px;
-<<<<<<< HEAD
     margin-left: 389px;
-=======
-    margin-left: 394px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     li{
         float: left;
         border-right: 1px solid #fff;
@@ -412,11 +75,7 @@ main{
     width: 242px;
     height: 525px;
     top: 0;
-<<<<<<< HEAD
     right:155px;
-=======
-    right:153px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     z-index: 10;
     background:#FFF;
     border-bottom: 1px solid #f7f5f7;
@@ -1497,11 +1156,7 @@ main{
     width: 62px;
     border: 1px solid #312b30;
     border-top: 0;
-<<<<<<< HEAD
     z-index: 50;
-=======
-    z-index: 12;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     position: fixed;
     bottom: 50px;
     display: none;

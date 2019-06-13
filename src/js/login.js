@@ -72,10 +72,6 @@ $(function () {
         });
 
         function moveVerify() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             let rand = parseInt(Math.random() * 3 + 1);
             console.log(rand);
             let imgurl = '../img/login/verify' + rand + '.jpg';
@@ -134,11 +130,7 @@ $(function () {
                                 let uid = data.uid;
                                 let code = data.code;
                                 let nick = data.nick;
-<<<<<<< HEAD
                                 //console.log(uid, code, nick)
-=======
-                                //								console.log(uid, code, nick)
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                                 if (code == 0) {
                                     $userBox.addClass('error_p');
                                     $error.css('visibility', 'visible');
@@ -149,36 +141,21 @@ $(function () {
                                     $error.css('visibility', 'visible');
                                     $errorval.html('密码与用户名不匹配。');
                                 } else if (code == 2) {
-<<<<<<< HEAD
                                     $.cookie('uid', uid, {
                                         expires: 7,
                                         path: '/'
-=======
-
-                                    $.cookie('uid', uid, {
-                                        expires: 7,
-                                        path: '/jdhk/src'
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                                     });
 
                                     $.cookie('nick', nick, {
                                         expires: 7,
-<<<<<<< HEAD
                                         path: '/'
-=======
-                                        path: '/jdhk/src '
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                                     });
                                     let $href = $.cookie('location');
                                     if ($href) {
                                         window.location.replace($href);
                                     } else {
-<<<<<<< HEAD
 
                                         window.location.replace('../mam.html');
-=======
-                                        window.location.replace('../index.html');
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                                     }
                                 }
                             }
@@ -197,17 +174,8 @@ $(function () {
                             'width': 0
                         }, 300);
                     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                 });
             });
         }
-
-
-
-
-
     })();
 });

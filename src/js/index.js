@@ -25,12 +25,6 @@ $(function () {
 $(function () {
     //初始化
     function init() {
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         //动态生成轮播图高亮点
         function appendLi() {
             let html = '';
@@ -38,10 +32,6 @@ $(function () {
                 html += '<li></li>';
             });
             $('.carousel_list ul').html(html);
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         }
         appendLi();
 
@@ -165,14 +155,7 @@ $(function () {
                 let min22 = parseInt((gap22 % (1000 * 60)) / 1000);
                 //距离18时的秒数差
 
-<<<<<<< HEAD
                 // %gap18/1000*60*60 
-=======
-                //			%gap18/1000*60*60 
-
-
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                 //判断时间
                 if (gap10 > 0) {
                     $time.show();
@@ -434,11 +417,7 @@ $(function () {
 
 
     $('#btn').click(function () {
-<<<<<<< HEAD
         let urls = './html/goodslist.html?search=' + $('#search').val();
-=======
-        let urls = '../html/listpage.html?search=' + $('#search').val();
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         window.location.href = urls;
     });
 });

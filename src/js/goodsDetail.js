@@ -17,9 +17,9 @@ $(function () {
     var title = null;
     var price = null;
     var shopid = decodeURI(strToObj(urls).dataid);
-    //	console.log(shopid);
+    console.log(shopid, 1);
     if (shopid == '' || shopid == "undefined") {
-        console.log(shopid);
+        console.log(shopid, 2);
         window.location.href = '../mam.html';
     } else {
 

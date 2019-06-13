@@ -1,7 +1,7 @@
 <?php
 	include 'conn.php';
 	
-	$shopid = isset($_GET['shopid'])?$_GET['shopid']:'';
+	$shopid = isset($_GET['shopid'])?$_GET['shopid']:'1';
 	
 	$sql = "SELECT * FROM cargo WHERE proid like $shopid";
 	

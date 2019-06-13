@@ -134,6 +134,7 @@ $(function () {
         $.ajax({
             type: "get",
             url: "../api/search.php",
+            // data: hasinput(),
             success: function (res) {
                 // console.log(res);
                 var arr = JSON.parse(res);
@@ -197,8 +198,8 @@ $(function () {
                                 </div>
                             </li>`;
                 }).join('');
-                console.log(content);
-                console.log(html)
+                // console.log(content);
+                // console.log(html)
                 $('.list_btm ul').html(html);
 
 
@@ -219,7 +220,7 @@ $(function () {
                             $('#molecule').html(num);
                             paging();
                         }
-                        console.log(index, 2)
+                        // console.log(index, 2)
                     }
                 })
             }
@@ -525,7 +526,7 @@ $(function () {
         $.ajax({
             type: "get",
             url: "../api/search.php",
-            data: hasinput(),
+            // data: hasinput(),
             success: function (res) {
                 // console.log(res);
                 var arr = JSON.parse(res);

@@ -2,37 +2,21 @@ $(function () {
     var istrue = false;
     var isVerify = false;
     var phonenum = '';//账号
-<<<<<<< HEAD
     var nickname = '';//用户名
     var pswnum = '';//密码
-=======
-    var nickname = '';
-    var pswnum = '';
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     var code = null; //验证码
     //验证手机号
     (function () {
         let phone = /^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/;
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         $('#phone').focus(function () {
             $('.phoneTips').removeClass('err');
             if ($('#phone').val().length < 11) {
                 $('.phoneTips').css('visibility', 'visible');
                 $('#txttips').text('验证完成后可以使用该手机进行登录');
             }
-<<<<<<< HEAD
         });
 
-=======
-
-        });
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         $('#phone').blur(function () {
             if ($('#phone').val() == '') {
                 $('.phoneTips').css('visibility', 'hidden');
@@ -43,14 +27,8 @@ $(function () {
                     $('#txttips').text('格式错误');
                 }
             }
-<<<<<<< HEAD
         });
 
-=======
-
-
-        });
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         $('#phone').bind('input propertychange', function () {
 
             if ($('#phone').val().length > 0 && $('#phone').val().length < 11) {
@@ -64,13 +42,7 @@ $(function () {
                     $('.phoneTips').css('visibility', 'hidden');
                     $('.phone .close').addClass('true');
                 }
-<<<<<<< HEAD
             }
-=======
-
-            }
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         });
 
         //验证码
@@ -85,10 +57,6 @@ $(function () {
             }
         });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         $('#write1_next').click(function () {
             if (!phone.test($('#phone').val())) {
                 $('.phoneTips').css('visibility', 'visible');
@@ -145,10 +113,6 @@ $(function () {
     }
 
     function moveVerify() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         let rand = parseInt(Math.random() * 3 + 1);
         let imgurl = '../img/register/verify' + rand + '.jpg';
         let toLeft = parseInt(Math.random() * 270 + 50);
@@ -164,22 +128,11 @@ $(function () {
             'background-position-y': -toTop,
         });
         $('#img img').attr('src', imgurl);
-<<<<<<< HEAD
         $('#lump').mousedown(function (e) {
             let x = e.pageX;
             //let x = e.offsetX;
             $('.strip_bg').css('background', '#42C2FC');
             $('#lump').mousemove(function (e) {
-=======
-
-        $('#lump').mousedown(function (e) {
-            let x = e.pageX;
-            //				let x = e.offsetX;
-
-            $('.strip_bg').css('background', '#42C2FC');
-            $('#lump').mousemove(function (e) {
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                 e.preventDefault(); //禁止图片拖动
                 $(document).bind("selectstart", function () {
                     return false;
@@ -209,10 +162,6 @@ $(function () {
                     //发送号码
                     send();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                 } else {
                     $('.strip_bg').css('background', '#ff534d');
                     $('#lump').stop().animate({
@@ -251,11 +200,6 @@ $(function () {
                 istrue = true;
                 code = null;
                 clearInterval(time);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             } else {
                 $('#btn').html(num + '秒后重新获取');
             }
@@ -263,36 +207,19 @@ $(function () {
         }, 1000);
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     let nickInp = /[\u4e00-\u9fa5_a-zA-Z0-9_]{4,12}/;
     let maths = /[0-9]/;
     let eng = /[a-zA-Z]/;
     let chars = /\W/;
 
-<<<<<<< HEAD
     //昵称验证
     $('#nickname').focus(function () {
-=======
-
-    //昵称验证
-
-
-    $('#nickname').focus(function () {
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         $('.nickTips').html('输入4-12个字符或中文').css({
             'visibility': 'visible',
             'color': '#c5c5c5'
         });
     });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     function verName() {
         if ($('#nickname').val().length > 0) {
             if (nickInp.test($('#nickname').val())) {
@@ -309,13 +236,7 @@ $(function () {
                 $('#nickname').attr('data-true', 'false');
             }
 
-<<<<<<< HEAD
         } else {
-=======
-
-        } else {
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             $('.nickTips').html('输入4-12个字符或中文').css({
                 'visibility': 'hidden',
                 'color': '#c5c5c5'
@@ -325,17 +246,9 @@ $(function () {
 
     $('#nickname').blur(function () {
         verName();
-<<<<<<< HEAD
     });
 
     //密码验证
-=======
-
-    });
-
-    //密码验证
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     //等级强度
     $('#psw').focus(function () {
         $('.hint').html('输入6-15个数字字母或字符').css({
@@ -350,10 +263,6 @@ $(function () {
     });
 
     function verPsw() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         let grade = 0;
         if ($('#psw').val().length > 5) {
             if (maths.test($('#psw').val())) {
@@ -366,19 +275,11 @@ $(function () {
                 grade++;
             }
             if (grade == 1) {
-<<<<<<< HEAD
                 $('#grade').html('弱').css('color', 'red');
             } else if (grade == 2) {
                 $('#grade').html('中').css('color', 'yellow');
             } else if (grade == 3) {
                 $('#grade').html('高').css('color', '#58bc58');
-=======
-                $('#grade').html('弱').css('color', '#58bc58');
-            } else if (grade == 2) {
-                $('#grade').html('中').css('color', 'yellow');
-            } else if (grade == 3) {
-                $('#grade').html('高').css('color', 'red');
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             }
             $('.hint').html('密码可以使用').css({
                 'color': "rgb(51, 187, 68)"
@@ -387,10 +288,6 @@ $(function () {
 
         }
         if ($('#psw').val().length < 6 && $('#psw').val().length > 0) {
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             $('.pswTips').css({
                 'visibility': 'visible',
                 'color': '#c5c5c5'
@@ -416,10 +313,6 @@ $(function () {
 
     $('#psw').blur(function () {
         //console.log($('#psw').val().length)
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         verPsw();
     });
 
@@ -433,10 +326,6 @@ $(function () {
     });
 
     function comfirmPsw() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
         if ($("#confirm").val().length > 5) {
             if ($("#confirm").val() != $("#psw").val()) {
                 $('.confirmTips').css('visibility', 'visible');
@@ -449,15 +338,9 @@ $(function () {
                 $('.mistake').html('两次密码一致').css('color', "rgb(51, 187, 68)").show();
                 $('#confirm').attr('data-true', 'true');
             }
-<<<<<<< HEAD
             //console.log(123)
         } else {
             //console.log(456)
-=======
-            //			console.log(123)
-        } else {
-            //					console.log(456)
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
             $('.mistake').html('密码太短').css('color', "rgb(51, 187, 68)").show();
             $('#confirm').attr('data-true', 'false');
         }
@@ -496,21 +379,14 @@ $(function () {
                     },
                     dataType: 'text',
                     success: function (data) {
-<<<<<<< HEAD
                         console.log(data, 1);
-=======
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                         if (data == 1) {
                             $('.write3 .state').html('注册成功')
                             $('.write2').hide();
                             $('.write3').show();
 
                             setTimeout(function () {
-<<<<<<< HEAD
                                 window.location.replace('./login.html')
-=======
-                                window.location.replace('login.html')
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
                             }, 2000);
 
                         } else {

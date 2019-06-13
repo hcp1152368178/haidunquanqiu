@@ -33,11 +33,7 @@
     padding: 0 8px;
   }
   .topnav .top-nav-r li a {
-<<<<<<< HEAD
     display: inline-block;
-=======
-    display: block;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     color: #9A949B;
   }
   .topnav .top-nav-r .line {
@@ -51,13 +47,9 @@
   }
   
   .guangZhu {
-<<<<<<< HEAD
       width: 126px;
     position: relative;
     text-align: center;
-=======
-    position: relative;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
   }
   .guangZhu .guangZhu-icon {
     color: #9A949B;
@@ -68,28 +60,19 @@
     width: 11px;
     height: 10px;
     top: 9px;
-<<<<<<< HEAD
     left: 8px;
-=======
-    left: -5px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     background: url(../img/index/icon.png) no-repeat -60px -39px;
   }
   .guangZhu .guangZhu-icon .jiankuohao {
     position: absolute;
     display: inline-block;
     top: 12px;
-<<<<<<< HEAD
     right: 8px;
-=======
-    right: -8px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     width: 11px;
     height: 7px;
     background: url(../img/index/icon.png) no-repeat -60px -63px;
     transition: transform .1s ease-in 0s;
   }
-<<<<<<< HEAD
   .erweima-pic{
     display: none;
     position: absolute;
@@ -116,8 +99,6 @@
   .guangZhu:hover{
     background: #FFF;
   }
-=======
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
   .guangZhu:hover .guangZhu-icon {
     color: #863177;
   }
@@ -128,10 +109,6 @@
     background-position: -82px -83px;
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
   header {
     width: 100%;
   }
@@ -144,11 +121,7 @@
     display: block;
     margin-top: 25px;
   }
-<<<<<<< HEAD
   header .header .searcher {
-=======
-  header .header .search {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     position: relative;
     z-index: 11;
     width: 575px;
@@ -157,17 +130,10 @@
     font-size: 12px;
     margin-left: 247px;
   }
-<<<<<<< HEAD
   header .header .searcher .form {
     margin-bottom: 4px;
   }
   header .header .searcher .form .text {
-=======
-  header .header .search .form {
-    margin-bottom: 4px;
-  }
-  header .header .search .form .text {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     float: left;
     width: 463px;
     height: 36px;
@@ -180,11 +146,7 @@
     outline: 0;
     font-size: 14px;
   }
-<<<<<<< HEAD
   header .header .searcher .form .button {
-=======
-  header .header .search .form .button {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     float: left;
     width: 102px;
     height: 36px;
@@ -195,11 +157,7 @@
     font-size: 16px;
     cursor: pointer;
   }
-<<<<<<< HEAD
   header .header .searcher .hot {
-=======
-  header .header .search .hot {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     float: left;
     width: 470px;
     height: 20px;
@@ -207,11 +165,7 @@
     line-height: 20px;
     overflow: hidden;
   }
-<<<<<<< HEAD
   header .header .searcher .hot a {
-=======
-  header .header .search .hot a {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     float: left;
     white-space: nowrap;
     margin-right: 10px;
@@ -249,7 +203,6 @@
     color: #fff;
     font-size: 16px;
   }
-<<<<<<< HEAD
 
 /*nav 开始*/
 #nav {
@@ -315,75 +268,6 @@
     display: block;
   }
 .list_item h3 {
-=======
-  
-  nav {
-    width: 100%;
-    border-bottom: 1px solid #312B30;
-  }
-  nav .navbox {
-    height: 43px;
-  }
-  nav .navbox .nav {
-    line-height: 42px;
-    position: relative;
-    height: 42px;
-  }
-  nav .navbox .nav li {
-    float: left;
-  }
-  nav .navbox .nav li a {
-    color: #fff;
-  }
-  nav .navbox .nav .allnav {
-    float: left;
-    position: relative;
-    z-index: 10;
-    width: 242px;
-    height: 42px;
-    overflow: visible;
-    background: #312B30;
-    border-bottom: 2px solid #312B30;
-  }
-  nav .navbox .nav .allnav > a {
-    display: block;
-    width: 184px;
-    height: 42px;
-    line-height: 44px;
-    font-size: 16px;
-    padding: 0 10px 0 46px;
-    background: #312B30;
-    color: #fff;
-  }
-  nav .navbox .nav .allnav > a i {
-    background: url(../img/index/icon.png);
-    background-repeat: no-repeat;
-    background-position: -53px -131px;
-    width: 16px;
-    height: 14px;
-    position: absolute;
-    top: 15px;
-    right: 204px;
-  }
-  nav .navbox .nav .allnav .dd {
-    width: 242px;
-    height: 526px;
-    background-color: #312b30;
-  }
-  nav .navbox .nav .allnav .dd-inner {
-    padding: 1px 0 0 10px;
-    width: 232px;
-    height: 516px;
-  }
-  nav .navbox .nav .allnav .item {
-    position: relative;
-    z-index: 1;
-    height: 33px;
-    color: #fff;
-    margin-top: 10px;
-  }
-  nav .navbox .nav .allnav h3 {
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     float: left;
     z-index: 2;
     height: 33px;
@@ -391,7 +275,6 @@
     line-height: 33px;
     font-size: 14px;
   }
-<<<<<<< HEAD
 .list_item h3 a {
     color: #fff;
   }
@@ -403,30 +286,10 @@
     z-index: 2;
     width: 55px;
     font-size: 14px;
-=======
-  nav .navbox .nav .allnav h3 i {
-    background: url(../img/index/icon.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 18px;
-    height: 20px;
-    top: 6px;
-    right: 194px;
-    background-position: -28px 0;
-  }
-  nav .navbox .nav .allnav h3 a {
-    color: #FFF;
-  }
-  nav .navbox .nav .allnav h4 {
-    float: left;
-    z-index: 2;
-    width: 48px;
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
     height: 33px;
     overflow: hidden;
     padding: 0 5px 0 2px;
     line-height: 33px;
-<<<<<<< HEAD
   }
 .list_item h4 a {
     color: #C0B6C2;
@@ -561,41 +424,6 @@
     color: #863177;
 }
 /* nav 结束 */
-=======
-    font-weight: normal;
-  }
-  nav .navbox .nav .allnav h4 a {
-    font-size: 14px;
-    color: #C0B6C2;
-    opacity: .91;
-  }
-  nav .navbox .nav .allnav .r-jianhao {
-    position: absolute;
-    background: url(../img/index/icon.png) -60px -102px no-repeat;
-    background-repeat: no-repeat;
-    background-position: -60px -102px;
-    width: 6px;
-    height: 9px;
-    top: 11px;
-    right: 20px;
-  }
-  nav .navbox .nav .shouye {
-    width: 66px;
-    height: 40px;
-    text-align: center;
-  }
-  nav .navbox .nav .shouye a {
-    color: black;
-  }
-  nav .navbox .nav .shouye a:hover {
-    color: #863177;
-  }
-  nav .navbox .nav > .dd {
-    width: 88px;
-    height: 40px;
-    text-align: center;
-  }
->>>>>>> 83232dd159fc36e2b47f2378d626fef501fdf807
 
 /*尾部开始*/
 #footbox{

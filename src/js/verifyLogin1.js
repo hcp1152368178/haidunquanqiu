@@ -7,14 +7,14 @@ $(function () {
             //console.log($uid)
             $.ajax({
                 type: "post",
-                url: "../api/verifyLogin.php",
+                url: "./api/verifyLogin.php",
                 data: {
                     'uid': $uid
                 },
                 dataType: 'json',
                 success: function (data) {
                     if (data.code == 1) {
-                        let $html = '<a href="./cart.html" class="name">' + data.nick + '</a><a href="###" id="exit">退出</a>';
+                        let $html = '<a href="./html/cart.html" class="name">' + data.nick + '</a><a href="###" id="exit">退出</a>';
                         $('#login').html($html);
 
                     }
@@ -33,7 +33,7 @@ $(function () {
             $.cookie('uid', null, {
                 path: '/'
             });
-            $('#login').html('<a href="../html/login.html">你好，请登录</a>');
+            $('#login').html('<a href="./html/login.html">你好，请登录</a>');
             window.location.reload();
         });
     }
